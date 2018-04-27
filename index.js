@@ -7,7 +7,7 @@ $(document).ready(function() {
             currentLocation = position;
             var latitude = currentLocation.coords.latitude;
             var longitude = currentLocation.coords.longitude;
-            var url = 'http://api.apixu.com/v1/current.json?key=abd9353455ba49079e171307182204&q=';
+            var url = 'https://api.apixu.com/v1/current.json?key=abd9353455ba49079e171307182204&q=';
             $.getJSON(url+latitude+','+longitude, function(data) {
                 // turns a js object into JSON teks and stores that JSON text in a string
                 var data = JSON.stringify(data);
