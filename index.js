@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // https://www.apixu.com
     $('.short').hide();
     if(navigator.geolocation) {
         var currentLocation = '';
